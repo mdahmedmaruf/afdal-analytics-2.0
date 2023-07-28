@@ -576,6 +576,12 @@ ul.list-group li {
 }
 
 @media (max-width: 767px) {
+	.main-navigation {
+		gap: 10px;
+	}
+	.nav-link.active {
+		font-family: var(--font-regular);
+	}
 	.hero-keywords {
 		font-family: var(--font-bold);
 	}
