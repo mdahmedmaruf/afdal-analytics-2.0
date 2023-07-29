@@ -452,6 +452,65 @@ button.navbar-toggler:visited {
 ul.list-group li {
 	background-color: transparent;
 }
+.faq-text {
+	color: var(--primary-blue);
+	text-align: center;
+	font-family: var(--font-regular);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.accordion-button:not(.collapsed) {
+	background-color: #ffffff;
+	box-shadow: none;
+}
+.accordion-button:not(.collapsed),
+.accordion-button {
+	color: #000;
+	font-family: var(--font-medium);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 21.6px */
+}
+.accordion-button:not(.collapsed)::after {
+	background-image: url('/assets/images/chevron.down.svg');
+	transform: rotate(0);
+}
+.accordion-button::after {
+	background-image: url('/assets/images/chevron.right.svg');
+	transition: 0.5s;
+}
+.accordion-body {
+	color: var(--grey-color-text);
+	font-family: var(--font-regular);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.4px;
+}
+.plan-table table thead th {
+	color: #000;
+	font-family: var(--font-semibold);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: -0.25px;
+	padding: 20px;
+}
+.plan-table table tbody td {
+	color: #000;
+	font-family: var(--font-regular);
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.25px;
+	padding: 20px;
+}
 .pricing-newsletter-section {
 	background: linear-gradient(225deg, #ffd8d4 0%, #fde8d3 100%);
 }
