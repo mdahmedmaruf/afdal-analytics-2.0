@@ -131,13 +131,13 @@
 				</div>
 			</div>
 		</section>
-		<section class="pricing-section py-3 py-md-5">
+		<section class="pricing-section py-3 py-md-5 d-none d-md-flex">
 			<div class="container-lg">
 				<div
-					class="row mt-5 py-5 align-items-center justify-content-center g-0"
+					class="row mt-5 py-5 align-items-center justify-content-center position-relative g-0"
 				>
 					<div class="col-md-4">
-						<div class="card position-relative start-50 translate-middle-x">
+						<div class="card essential position-relative z-0">
 							<div class="card-body text-center py-5">
 								<h3 class="card-title">Essentials</h3>
 								<p class="card-subtitle px-4">
@@ -157,7 +157,7 @@
 					</div>
 
 					<div class="col-md-4">
-						<div class="card popular-package border-0">
+						<div class="card popular-package position-relative z-3 border-0">
 							<div
 								class="card-header text-center text-bg-primary text-white border-0 py-3"
 							>
@@ -183,7 +183,7 @@
 					</div>
 
 					<div class="col-md-4">
-						<div class="card border-0 ms-n5">
+						<div class="card custom position-relative z-0">
 							<div class="card-body text-center py-5">
 								<h3 class="card-title text-primary">Custom</h3>
 								<p class="card-subtitle px-4">
@@ -416,7 +416,395 @@
 				</div>
 			</div>
 		</section>
-		<section class="compare-section py-3 py-md-5">
+		<section class="mobile-price-section d-block d-md-none">
+			<div class="container-lg">
+
+				<div class="row justify-content-center align-items-center">
+					<ul class="nav nav-tabs nav-justified justify-content-center align-items-center position-relative px-0 mt-5 pt-4" id="myTab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button
+								class="nav-link  p-0 m-0"
+								id="home-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#home-tab-pane"
+								type="button"
+								role="tab"
+								aria-controls="home-tab-pane"
+								aria-selected="true"
+							>
+								<div class="card essential position-relative z-0">
+									<div class="mobile card-body text-center">
+										<h3 class="mobile card-title mb-0">Essentials</h3>
+
+										<div class="mobile price-text">
+											<h3 class="mt-0 mb-0">$29.99</h3>
+											<p>per month</p>
+										</div>
+
+										<a
+											href="#"
+											class="btn btn-outline-primary mobile px-4 py-2 shadow-0"
+											>Free Trial
+											<img src="/assets/images/play-mobile.svg" alt="" />
+										</a>
+									</div>
+								</div>
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button
+								class="nav-link active px-0 mx-0"
+								id="profile-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#profile-tab-pane"
+								type="button"
+								role="tab"
+								aria-controls="profile-tab-pane"
+								aria-selected="false"
+							>
+								<div class="card popular-package position-relative z-3">
+									<div
+										class="mobile card-header text-center text-bg-primary text-white border-0 py-1"
+									>
+										Most Popular
+									</div>
+									<div class="mobile card-body text-center">
+										<h3 class="mobile card-title mb-0">Plus</h3>
+
+										<div class="mobile price-text">
+											<h3 class="mt-0 mb-0">$79.99</h3>
+											<p>per month</p>
+										</div>
+
+										<a href="#" class="btn btn-primary mobile text-white px-4 py-2"
+											>Free Trial
+											<i class="bi bi-caret-right-fill text-light"></i>
+										</a>
+									</div>
+								</div>
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button
+								class="nav-link px-0 mx-0"
+								id="contact-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#contact-tab-pane"
+								type="button"
+								role="tab"
+								aria-controls="contact-tab-pane"
+								aria-selected="false"
+							>
+							<div class="card custom position-relative z-0">
+								<div class="mobile card-body custom text-center px-0">
+									<h3 class="mobile card-title text-primary mb-0">Custom</h3>
+
+									<div class="mobile price-text">
+										<h3  class="mt-0 mb-0">Custom Pricing</h3>
+										<p>per month</p>
+									</div>
+
+									<a href="#" class="btn btn-outline-primary mobile px-4 py-2"
+										>Get In Touch <img src="/assets/images/play-mobile.svg" alt="" />
+									</a>
+								</div>
+							</div>
+							</button>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div
+							class="tab-pane fade "
+							id="home-tab-pane"
+							role="tabpanel"
+							aria-labelledby="home-tab"
+							tabindex="0"
+						>
+							<div class="package-lists">
+								<h2 class="package-title mobile pt-4">Essentials</h2>
+								<p class="mobile card-subtitle text-center px-4 pb-4">
+									Data-driven marketing insights for freelancers and small
+									businesses
+								</p>
+								<div class="price-text">
+									<ul class="list-group rounded-0 text-start px-4 mt-0">
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Connect up to 3 connections
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Publishing on 1 Channel
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Planning up to 50 pieces of content per month
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Unlimited Users
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Pre-Built Dashboards
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Downloadable reports in PDF
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											1-hour of Analytics Consulting
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Chat Support
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade show active"
+							id="profile-tab-pane"
+							role="tabpanel"
+							aria-labelledby="profile-tab"
+							tabindex="0"
+						>
+							<div class="package-lists">
+								<h2 class="package-title mobile popular-package-plus text-center  pt-4">Plus</h2>
+								<p class="mobile card-subtitle text-center px-4">
+									Advanced analytics and enhanced integrations for medium-sized
+									businesses
+								</p>
+								<div class="price-text">
+									<ul class="list-group rounded-0 text-start px-5 mt-5">
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Everything in Essential
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Connect up to 25 Connections
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Publishing on up to 10 Channels
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Planning up to 2,000 pieces of content per month.
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Custom Dashboards
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Monthly Analytics Consutls
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Chat & Video Support
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="contact-tab-pane"
+							role="tabpanel"
+							aria-labelledby="contact-tab"
+							tabindex="0"
+						>
+							<div class="package-lists">
+								<p class="mobile card-subtitle text-center px-4">
+									<h2 class="package-title mobile pt-4 text-center text-primary">Custom</h2>
+									<p class="mobile card-subtitle text-center px-4">Tailored solutions and dedicated support for agencies and
+									enterprises</p>
+								</p>
+								<div class="price-text">
+									<ul class="list-group rounded-0 text-start px-5 mt-5">
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Everything In plus
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Custom Connections
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Unlimited Planning & Publishing
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Unlimited Custom Dashboards
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Unlimited Historical Data
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Dedicated Account Manager
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											Monthly team Training
+										</li>
+										<li
+											class="list-group-item border-start-0 border-end-0 py-3"
+										>
+											<img
+												src="/assets/images/check-icon.svg"
+												alt="check icon"
+												class="me-2"
+											/>
+											User Roles & permisions
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="compare-section py-3 py-md-5 d-none d-md-block">
 			<div class="container-lg">
 				<div class="row justify-content-center align-items-center">
 					<div class="col-md-12 text-center p-3 p-md-5">
@@ -634,6 +1022,55 @@
 									</tr>
 								</tbody>
 							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="compare-section mobile py-5 d-block d-md-none">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2 class="section-title mobile compare text-center">Compare Plans</h2>
+						<nav>
+							<div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+								<button class="nav-link active" id="nav-essential-tab" data-bs-toggle="tab" data-bs-target="#nav-essential" type="button" role="tab" aria-controls="nav-essential" aria-selected="true">Essentials</button>
+								<button class="nav-link" id="nav-plus-tab" data-bs-toggle="tab" data-bs-target="#nav-plus" type="button" role="tab" aria-controls="nav-plus" aria-selected="false">Plus</button>
+								<button class="nav-link" id="nav-custom-tab" data-bs-toggle="tab" data-bs-target="#nav-custom" type="button" role="tab" aria-controls="nav-custom" aria-selected="false">Custom</button>
+							</div>
+						</nav>
+						<div class="tab-content" id="nav-tabContent">
+							<div class="tab-pane fade show active" id="nav-essential" role="tabpanel" aria-labelledby="nav-essential-tab" tabindex="0">
+								<table class="table">
+									<thead>
+										<tr>
+
+											<th scope="col">Features</th>
+											<th scope="col">Essentials</th>
+
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+
+											<td>Data sources</td>
+											<td>Up to 3</td>
+
+										</tr>
+										<tr>
+
+											<td>Publishing</td>
+											<td>1 Channel</td>
+
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+							<div class="tab-pane fade" id="nav-plus" role="tabpanel" aria-labelledby="nav-plus-tab" tabindex="0">...</div>
+							<div class="tab-pane fade" id="nav-custom" role="tabpanel" aria-labelledby="nav-custom-tab" tabindex="0">...</div>
+
 						</div>
 					</div>
 				</div>

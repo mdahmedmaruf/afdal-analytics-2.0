@@ -401,6 +401,12 @@ button.navbar-toggler:visited {
 	filter: drop-shadow(0px 0px 4px rgba(47, 51, 61, 0.25));
 	border-radius: 15px;
 }
+.card.essential.position-relative {
+	right: -10px;
+}
+.card.custom.position-relative {
+	left: -10px;
+}
 .popular-package {
 	border-radius: 15px;
 	background: #fff;
@@ -422,6 +428,9 @@ button.navbar-toggler:visited {
 	font-weight: 700;
 	line-height: normal;
 }
+.popular-package .card-title {
+	color: #ef3054;
+}
 .card-subtitle {
 	color: #747474;
 	font-family: var(--font-regular);
@@ -437,6 +446,15 @@ button.navbar-toggler:visited {
 	font-size: 64px;
 	font-style: normal;
 	font-weight: 800;
+	line-height: normal;
+}
+.price-text p {
+	color: #747474;
+	text-align: center;
+	font-family: var(--font-medium);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
 	line-height: normal;
 }
 .price-text li {
@@ -516,8 +534,6 @@ ul.list-group li {
 }
 .pricing-signup {
 	color: #ef3054;
-
-	/* title for banners */
 	font-family: 'Fraunces', serif;
 	font-size: 60px;
 	font-style: normal;
@@ -769,6 +785,56 @@ ul.list-group li {
 		font-size: 12px;
 		line-height: normal;
 		letter-spacing: normal;
+	}
+
+	/* Price Page */
+	.happy-woman-image.position-relative {
+		height: 100px;
+	}
+	.mobile.card-header {
+		font-size: 10px;
+		font-family: var(--font-regular);
+	}
+	h3.mobile.card-title {
+		font-size: 16px;
+	}
+	.mobile.price-text h3 {
+		font-size: 15px;
+	}
+	.package-title.mobile {
+		color: #153a5a;
+		text-align: center;
+		font-family: var(--font-bold);
+		font-size: 25px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
+	.mobile.price-text p {
+		font-size: 10px;
+	}
+	.mobile.card-body .btn-outline-primary.mobile {
+		padding: 8px 10px !important;
+		font-size: 10px;
+	}
+	.popular-package .btn-primary.mobile {
+		font-size: 10px;
+		padding: 8px 10px !important;
+	}
+	.package-title.mobile.popular-package-plus {
+		color: #ef3054;
+	}
+	.nav-tabs {
+		border-bottom: 0;
+	}
+	.nav-tabs .nav-link.active,
+	.nav-tabs .nav-item.show .nav-link {
+		border-color: transparent;
+	}
+	.section-title.mobile.compare {
+		text-transform: capitalize;
+		letter-spacing: normal;
+		font-family: var(--font-semibold);
 	}
 
 	/* Conact Page */
