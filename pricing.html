@@ -453,7 +453,7 @@
 						</li>
 						<li class="nav-item" role="presentation">
 							<button
-								class="nav-link active px-0 mx-0"
+								class="nav-link active p-0 m-0"
 								id="profile-tab"
 								data-bs-toggle="tab"
 								data-bs-target="#profile-tab-pane"
@@ -486,7 +486,7 @@
 						</li>
 						<li class="nav-item" role="presentation">
 							<button
-								class="nav-link px-0 mx-0"
+								class="nav-link p-0 m-0"
 								id="contact-tab"
 								data-bs-toggle="tab"
 								data-bs-target="#contact-tab-pane"
@@ -1033,8 +1033,8 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<h2 class="section-title mobile compare text-center">Compare Plans</h2>
-						<nav>
-							<div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+						<nav class="d-flex justify-content-center">
+							<div class="nav nav-tabs btn-group justify-content-center d-inline-flex align-content-center my-3" id="nav-tab" role="tablist">
 								<button class="nav-link active" id="nav-essential-tab" data-bs-toggle="tab" data-bs-target="#nav-essential" type="button" role="tab" aria-controls="nav-essential" aria-selected="true">Essentials</button>
 								<button class="nav-link" id="nav-plus-tab" data-bs-toggle="tab" data-bs-target="#nav-plus" type="button" role="tab" aria-controls="nav-plus" aria-selected="false">Plus</button>
 								<button class="nav-link" id="nav-custom-tab" data-bs-toggle="tab" data-bs-target="#nav-custom" type="button" role="tab" aria-controls="nav-custom" aria-selected="false">Custom</button>
@@ -1042,34 +1042,282 @@
 						</nav>
 						<div class="tab-content" id="nav-tabContent">
 							<div class="tab-pane fade show active" id="nav-essential" role="tabpanel" aria-labelledby="nav-essential-tab" tabindex="0">
-								<table class="table">
-									<thead>
-										<tr>
+								<div class="plan-table">
+									<table class="table table-bordered">
+										<thead class="table-active border-1">
+											<tr>
+												<th scope="col">Features</th>
+												<th scope="col" class="text-center border-start text-primary">Essentials</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Data sources</td>
+												<td >Up to 3</td>
+											</tr>
+											<tr>
+												<td>Publishing</td>
+												<td >1 Channel</td>
+											</tr>
+											<tr>
+												<td>Planning</td>
+												<td>50 pieces per /m</td>
+											</tr>
+											<tr>
+												<td>Reports</td>
+												<td>Unlimited</td>
+											</tr>
+											<tr>
+												<td>Users</td>
+												<td>Unlimited</td>
+											</tr>
+											<tr>
+												<td>Data Guarantee</td>
+												<td>
+													<img src="/assets/images/close_24px.svg" alt="table close">
+												</td>
+											</tr>
+											<tr>
+												<td>Data Volume</td>
+												<td>10 GB</td>
+											</tr>
+											<tr>
+												<td>Historical Data</td>
+												<td>Up to 1 Year</td>
+											</tr>
+											<tr>
+												<td>Custom Dashboards</td>
+												<td>
+													<img src="/assets/images/close_24px.svg" alt="table close">
+												</td>
+											</tr>
+											<tr>
+												<td>Custom Connections</td>
+												<td>
+													<img src="/assets/images/close_24px.svg" alt="table close">
+												</td>
+											</tr>
+											<tr>
+												<td>Support</td>
+												<td>Chat</td>
+											</tr>
+											<tr>
+												<td>User Roles & Permissions</td>
+												<td>
+													<img src="/assets/images/close_24px.svg" alt="table close">
+												</td>
+											</tr>
+											<tr>
+												<td>White Labelling</td>
+												<td>
+													<img src="/assets/images/close_24px.svg" alt="table close">
+												</td>
+											</tr>
+											<tr>
+												<td>Guided Setup</td>
+												<td>
+													<img src="/assets/images/tabler_check.svg" alt="table check">
+												</td>
+											</tr>
+											<tr>
+												<td>Consultation</td>
+												<td>
+													<img src="/assets/images/close_24px.svg" alt="table close">
+												</td>
+											</tr>
+											<tr>
+												<td>Team Training Sessions</td>
+												<td>
+													<img src="/assets/images/close_24px.svg" alt="table close">
+												</td>
+											</tr>
 
-											<th scope="col">Features</th>
-											<th scope="col">Essentials</th>
-
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-
-											<td>Data sources</td>
-											<td>Up to 3</td>
-
-										</tr>
-										<tr>
-
-											<td>Publishing</td>
-											<td>1 Channel</td>
-
-										</tr>
-
-									</tbody>
-								</table>
+										</tbody>
+									</table>
+								</div>
 							</div>
-							<div class="tab-pane fade" id="nav-plus" role="tabpanel" aria-labelledby="nav-plus-tab" tabindex="0">...</div>
-							<div class="tab-pane fade" id="nav-custom" role="tabpanel" aria-labelledby="nav-custom-tab" tabindex="0">...</div>
+							<div class="tab-pane fade" id="nav-plus" role="tabpanel" aria-labelledby="nav-plus-tab" tabindex="0">
+								<div class="plan-table">
+									<table class="table table-bordered">
+										<thead class="table-active border-1">
+											<tr>
+												<th scope="col">Features</th>
+												<th scope="col" class="text-center border-start text-primary">Plus</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Data sources</td>
+												<td >Up to 25</td>
+											</tr>
+											<tr>
+												<td>Publishing</td>
+												<td >10 Channel</td>
+											</tr>
+											<tr>
+												<td>Planning</td>
+												<td>2,000 pieces per /m</td>
+											</tr>
+											<tr>
+												<td>Reports</td>
+												<td>Unlimited</td>
+											</tr>
+											<tr>
+												<td>Users</td>
+												<td>Unlimited</td>
+											</tr>
+											<tr>
+												<td>Data Guarantee</td>
+												<td>
+													<img src="/assets/images/tabler_check.svg" alt="table check">
+												</td>
+											</tr>
+											<tr>
+												<td>Data Volume</td>
+												<td>100 GB</td>
+											</tr>
+											<tr>
+												<td>Historical Data</td>
+												<td>Up to 2 Year</td>
+											</tr>
+											<tr>
+												<td>Custom Dashboards</td>
+												<td>Unlimited</td>
+											</tr>
+											<tr>
+												<td>Custom Connections</td>
+												<td>
+													<img src="/assets/images/close_24px.svg" alt="table close">
+												</td>
+											</tr>
+											<tr>
+												<td>Support</td>
+												<td>Chat & Video</td>
+											</tr>
+											<tr>
+												<td>User Roles & Permissions</td>
+												<td>
+													<img src="/assets/images/close_24px.svg" alt="table close">
+												</td>
+											</tr>
+											<tr>
+												<td>White Labelling</td>
+												<td>
+													<img src="/assets/images/close_24px.svg" alt="table close">
+												</td>
+											</tr>
+											<tr>
+												<td>Guided Setup</td>
+												<td>
+													<img src="/assets/images/tabler_check.svg" alt="table check">
+												</td>
+											</tr>
+											<tr>
+												<td>Consultation</td>
+												<td>
+													<img src="/assets/images/tabler_check.svg" alt="table check">
+												</td>
+											</tr>
+											<tr>
+												<td>Team Training Sessions</td>
+												<td>
+													<img src="/assets/images/close_24px.svg" alt="table close">
+												</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="nav-custom" role="tabpanel" aria-labelledby="nav-custom-tab" tabindex="0">
+								<div class="plan-table">
+									<table class="table table-bordered">
+										<thead class="table-active border-1">
+											<tr>
+												<th scope="col">Features</th>
+												<th scope="col" class="text-center border-start text-primary">Custom</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Data sources</td>
+												<td>Unlimited</td>
+											</tr>
+											<tr>
+												<td>Publishing</td>
+												<td>Unlimited</td>
+											</tr>
+											<tr>
+												<td>Planning</td>
+												<td>Unlimited</td>
+											</tr>
+											<tr>
+												<td>Reports</td>
+												<td>Unlimited</td>
+											</tr>
+											<tr>
+												<td>Users</td>
+												<td>Unlimited</td>
+											</tr>
+											<tr>
+												<td>Data Guarantee</td>
+												<td>
+													<img src="/assets/images/tabler_check.svg" alt="table check">
+												</td>
+											</tr>
+											<tr>
+												<td>Data Volume</td>
+												<td>Unlimited</td>
+											</tr>
+											<tr>
+												<td>Historical Data</td>
+												<td>Unlimited</td>
+											</tr>
+											<tr>
+												<td>Custom Dashboards</td>
+												<td>Unlimited</td>
+											</tr>
+											<tr>
+												<td>Custom Connections</td>
+												<td>Unlimited</td>
+											</tr>
+											<tr>
+												<td>Support</td>
+												<td>Account Manager</td>
+											</tr>
+											<tr>
+												<td>User Roles & Permissions</td>
+												<td>
+													<img src="/assets/images/tabler_check.svg" alt="table check">
+												</td>
+											</tr>
+											<tr>
+												<td>White Labelling</td>
+												<td>Unlimited</td>
+											</tr>
+											<tr>
+												<td>Guided Setup</td>
+												<td>
+													<img src="/assets/images/tabler_check.svg" alt="table check">
+												</td>
+											</tr>
+											<tr>
+												<td>Consultation</td>
+												<td>
+													<img src="/assets/images/tabler_check.svg" alt="table check">
+												</td>
+											</tr>
+											<tr>
+												<td>Team Training Sessions</td>
+												<td>
+													<img src="/assets/images/tabler_check.svg" alt="table check">
+												</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
 
 						</div>
 					</div>
@@ -1084,7 +1332,7 @@
 						<h1 class="section-title text-primary">
 							Frequently Asked Questions
 						</h1>
-						<p class="faq-text">
+						<p class="faq-text d-none d-md-block">
 							All your questions answered. And if you can’t find it here, chat
 							to our friendly team.
 						</p>
@@ -1096,7 +1344,7 @@
 							<div class="accordion-item border-bottom-0 my-3">
 								<h2 class="accordion-header">
 									<button
-										class="accordion-button font-bold"
+										class="accordion-button"
 										type="button"
 										data-bs-toggle="collapse"
 										data-bs-target="#flush-collapseOne"
@@ -1123,7 +1371,7 @@
 							<div class="accordion-item border-bottom-0 my-3">
 								<h2 class="accordion-header">
 									<button
-										class="accordion-button collapsed font-bold"
+										class="accordion-button collapsed"
 										type="button"
 										data-bs-toggle="collapse"
 										data-bs-target="#flush-collapseTwo"
@@ -1150,7 +1398,7 @@
 							<div class="accordion-item border-bottom-0 my-3">
 								<h2 class="accordion-header">
 									<button
-										class="accordion-button collapsed font-bold"
+										class="accordion-button collapsed"
 										type="button"
 										data-bs-toggle="collapse"
 										data-bs-target="#flush-collapseThree"
@@ -1178,7 +1426,7 @@
 							<div class="accordion-item border-bottom-0 my-3">
 								<h2 class="accordion-header">
 									<button
-										class="accordion-button collapsed font-bold"
+										class="accordion-button collapsed"
 										type="button"
 										data-bs-toggle="collapse"
 										data-bs-target="#flush-collapseFour"

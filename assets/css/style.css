@@ -830,11 +830,57 @@ ul.list-group li {
 	.nav-tabs .nav-link.active,
 	.nav-tabs .nav-item.show .nav-link {
 		border-color: transparent;
+		border-radius: 15px;
 	}
+
 	.section-title.mobile.compare {
 		text-transform: capitalize;
 		letter-spacing: normal;
 		font-family: var(--font-semibold);
+	}
+	.plan-table table tbody td:nth-child(2) {
+		text-align: center;
+	}
+	.compare-section.mobile .nav-tabs .nav-link {
+		border: 1px solid #d4d4d4;
+		border-radius: 0;
+		font-size: 13px;
+		font-family: var(--font-bold);
+		color: var(--primary-blue);
+	}
+	.compare-section.mobile .nav-tabs .nav-link.active {
+		border: 1px solid var(--orange-primary-color);
+		color: var(--orange-primary-color);
+	}
+	button#nav-essential-tab {
+		border-radius: 10px 0 0 10px;
+		/* border-right: 1px solid transparent; */
+	}
+	button#nav-custom-tab {
+		border-radius: 0 10px 10px 0;
+		/* border-left: 1px solid transparent; */
+	}
+	button#nav-custom-tab .nav-link.active {
+		border-left: 1px solid var(--orange-primary-color);
+	}
+	.plan-table table thead th {
+		font-size: 15px;
+	}
+	.plan-table table tbody td {
+		font-size: 12px;
+	}
+
+	.faq-section h1.section-title.text-primary {
+		color: var(--primary-blue) !important;
+		text-transform: capitalize;
+		letter-spacing: normal;
+	}
+	button.accordion-button {
+		font-size: 15px;
+	}
+	.accordion-body {
+		font-size: 12px;
+		letter-spacing: normal;
 	}
 
 	/* Conact Page */
