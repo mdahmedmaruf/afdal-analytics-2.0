@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@300;400;700&display=swap');
 @font-face {
 	font-family: 'Gilroy Light';
-	src: url(/assets/fonts/Gilroy-Light.ttf);
+	src: url(../fonts/Gilroy-Light.ttf);
 	font-weight: 300;
 }
 @font-face {
 	font-family: 'Gilroy Regular';
-	src: url(/assets/fonts/Gilroy-Regular.ttf);
+	src: url(../fonts/Gilroy-Regular.ttf);
 	font-weight: 400;
 }
 @font-face {
 	font-family: 'Gilroy Medium';
-	src: url(/assets/fonts/Gilroy-Medium.ttf);
+	src: url(../fonts/Gilroy-Medium.ttf);
 	font-weight: 500;
 }
 @font-face {
 	font-family: 'Gilroy Semibold';
-	src: url(/assets/fonts/Gilroy-SemiBold.ttf);
+	src: url(../fonts/Gilroy-SemiBold.ttf);
 	font-weight: 600;
 }
 @font-face {
 	font-family: 'Gilroy Bold';
-	src: url(/assets/fonts/Gilroy-Bold.ttf);
+	src: url(../fonts/Gilroy-Bold.ttf);
 	font-weight: 700;
 }
 :root {
@@ -493,11 +493,11 @@ ul.list-group li {
 	line-height: 120%; /* 21.6px */
 }
 .accordion-button:not(.collapsed)::after {
-	background-image: url('/assets/images/chevron.down.svg');
+	background-image: url('assets/images/chevron.down.svg');
 	transform: rotate(0);
 }
 .accordion-button::after {
-	background-image: url('/assets/images/chevron.right.svg');
+	background-image: url('assets/images/chevron.right.svg');
 	transition: 0.5s;
 }
 .accordion-body {
