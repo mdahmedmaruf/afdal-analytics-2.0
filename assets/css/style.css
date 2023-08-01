@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@300;400;700&family=Noto+Sans+Arabic:wght@400;500;700&display=swap');
 @font-face {
 	font-family: 'Gilroy Light';
 	src: url(../fonts/Gilroy-Light.ttf);
@@ -207,6 +207,7 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+	margin-top: 15px;
 }
 
 .business-reinvent {
@@ -648,6 +649,13 @@ ul.list-group li {
 	.hero-left-content {
 		padding-left: 130px;
 	}
+	.hero-right-arabic-content {
+		padding-right: 130px;
+	}
+	.marketing-success .text-content {
+		width: 51%;
+		margin: auto;
+	}
 }
 
 @media (max-width: 767px) {
@@ -769,6 +777,7 @@ ul.list-group li {
 	/* Platform Page */
 	.data-driven-subtitle {
 		font-size: 20px;
+		color: var(--primary-blue) !important;
 		line-height: 30px;
 	}
 	.single-data-image img {
