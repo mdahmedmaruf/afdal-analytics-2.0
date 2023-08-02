@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@300;400;700&family=Noto+Sans+Arabic:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Fraunces:wght@600;700&family=Inter:wght@300;400;700&family=Noto+Sans+Arabic:wght@300;400;500;600;700&family=Tajawal:wght@400;700&display=swap');
 @font-face {
 	font-family: 'Gilroy Light';
 	src: url(../fonts/Gilroy-Light.ttf);
@@ -34,6 +34,7 @@
 	--font-medium: 'Gilroy Medium';
 	--font-semibold: 'Gilroy Semibold';
 	--font-bold: 'Gilroy Bold';
+	--font-arabic: 'Noto Sans Arabic', sans-serif;
 }
 
 .header-nav {
@@ -42,6 +43,9 @@
 
 .main-navigation {
 	gap: 54px;
+}
+.main-navigation.arabic {
+	gap: 15px;
 }
 .main-navigation a {
 	font-family: var(--font-regular);
@@ -53,6 +57,14 @@
 .nav-link.active {
 	font-family: var(--font-bold);
 }
+.main-navigation.arabic a {
+	font-family: var(--font-arabic);
+	font-weight: 400;
+}
+.main-navigation.arabic .nav-link.active {
+	font-family: var(--font-arabic);
+	font-weight: 700;
+}
 .registration-btn button {
 	color: var(--orange-primary-color);
 	font-family: var(--font-regular);
@@ -60,6 +72,15 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+}
+.registration-btn.arabic {
+	direction: ltr;
+}
+.registration-btn.arabic button {
+	font-family: var(--font-arabic);
+}
+.registration-btn.arabic .btn-primary {
+	padding: 10px 20px;
 }
 
 .hero-keywords {
@@ -71,6 +92,11 @@
 	line-height: normal;
 	text-transform: uppercase;
 }
+.arabic .hero-keywords {
+	font-family: var(--font-arabic);
+	font-weight: 500;
+	font-size: 15px;
+}
 .section-subtitle {
 	color: var(--grey-color-text);
 	font-family: var(--font-bold);
@@ -80,10 +106,13 @@
 	line-height: normal;
 	text-transform: uppercase;
 }
+.arabic .section-subtitle {
+	font-family: var(--font-arabic);
+	font-weight: 500;
+	font-size: 15px;
+}
 .section-title {
 	color: var(--primary-blue);
-
-	/* title website gilroy */
 	font-family: var(--font-bold);
 	font-size: 46px;
 	font-style: normal;
@@ -91,6 +120,10 @@
 	line-height: 61.5px; /* 133.696% */
 	letter-spacing: -0.23px;
 	text-transform: uppercase;
+}
+.arabic .section-title {
+	font-family: var(--font-arabic);
+	letter-spacing: normal;
 }
 .hero-subtitle {
 	color: var(--orange-primary-color);
@@ -102,6 +135,10 @@
 	display: block;
 	text-transform: capitalize;
 }
+.arabic .hero-subtitle {
+	font-family: var(--font-arabic);
+	font-weight: 400;
+}
 .hero-content {
 	color: var(--grey-color-text);
 	font-family: var(--font-regular);
@@ -110,6 +147,10 @@
 	font-weight: 400;
 	line-height: normal;
 	letter-spacing: -0.4px;
+}
+.arabic .hero-content {
+	font-family: var(--font-arabic);
+	letter-spacing: normal;
 }
 .text-content {
 	color: var(--grey-color-text);
@@ -120,12 +161,20 @@
 	line-height: normal;
 	letter-spacing: -0.4px;
 }
+.arabic .text-content {
+	font-family: var(--font-arabic);
+	letter-spacing: normal;
+}
 .btn-primary {
 	font-family: var(--font-bold);
 	font-size: 20px;
 	border-radius: 15px;
 	padding: 15px 30px;
 	box-shadow: 0px 0px 8px 0px rgba(47, 51, 61, 0.25);
+}
+.arabic .btn-primary {
+	font-family: var(--font-arabic);
+	font-weight: 700;
 }
 .btn-outline-primary {
 	color: var(--orange-primary-color);
@@ -138,9 +187,10 @@
 	padding: 15px 30px;
 	border-radius: 15px;
 	border: 1px solid #f58b1e;
-
-	/* Medium shadow-8px */
 	box-shadow: 0px 0px 8px 0px rgba(47, 51, 61, 0.25);
+}
+.arabic .btn-outline-primary {
+	font-family: var(--font-arabic);
 }
 .hero-list ul {
 	margin: 0;
@@ -156,8 +206,18 @@
 	line-height: normal;
 	letter-spacing: -0.4px;
 }
+.arabic .hero-list ul li {
+	font-family: var(--font-arabic);
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: normal;
+}
 .hero-right-banner {
 	padding: 67px 0 67px 67px;
+}
+.hero-left-arabic-banner {
+	padding: 67px 67px 67px 0;
 }
 
 .single-feature-item {
@@ -199,6 +259,10 @@
 	font-weight: 700;
 	line-height: 16.9%; /* 2.704px */
 }
+.arabic .feature-text h5 {
+	font-family: var(--font-arabic);
+	font-weight: 500;
+}
 .feature-text p {
 	color: var(--grey-color-text);
 	font-feature-settings: 'clig' off, 'liga' off;
@@ -208,6 +272,9 @@
 	font-weight: 400;
 	line-height: normal;
 	margin-top: 15px;
+}
+.arabic .feature-text p {
+	font-family: var(--font-arabic);
 }
 
 .business-reinvent {
@@ -221,12 +288,18 @@
 	line-height: 44px; /* 122.222% */
 	text-transform: capitalize;
 }
+.arabic .reinvent-section-title {
+	font-family: 'Cairo', sans-serif;
+}
 .reinvent-text {
 	font-family: var(--font-regular);
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 24px; /* 120% */
+}
+.arabic .reinvent-text {
+	font-family: 'Cairo', sans-serif;
 }
 
 .reinvent-fact-text h3 {
@@ -235,6 +308,12 @@
 	font-style: normal;
 	font-weight: 700;
 	line-height: 36px; /* 128.571% */
+}
+.arabic .reinvent-fact-text h3 {
+	font-family: var(--font-arabic);
+}
+.arabic .reinvent-fact-text p {
+	font-family: var(--font-arabic);
 }
 
 .newsletter-section {
@@ -246,8 +325,6 @@
 }
 .signup-title {
 	color: var(--primary-blue);
-
-	/* title for banners */
 	font-family: 'Fraunces', serif;
 	font-size: 60px;
 	font-style: normal;
@@ -256,6 +333,11 @@
 	letter-spacing: -0.6px;
 	text-transform: capitalize;
 }
+.arabic .signup-title {
+	font-family: var(--font-arabic);
+	font-weight: 700;
+	line-height: 121%;
+}
 .signup-text-content {
 	font-family: var(--font-regular);
 	font-size: 20px;
@@ -263,6 +345,9 @@
 	font-weight: 400;
 	line-height: 150%; /* 30px */
 	letter-spacing: -0.2px;
+}
+.arabic .signup-text-content {
+	font-family: var(--font-arabic);
 }
 .signup-form {
 	border-radius: 15px;
@@ -281,6 +366,10 @@
 	line-height: 22px; /* 137.5% */
 	border: 0;
 }
+.arabic .signup-form input {
+	font-family: var(--font-arabic);
+	font-weight: 300;
+}
 .signup-form input:focus {
 	box-shadow: none;
 }
@@ -295,9 +384,10 @@
 	border-radius: 15px;
 	padding: 15px 30px;
 	background: var(--primary-blue);
-
-	/* Medium shadow-8px */
 	box-shadow: 0px 0px 8px 0px rgba(47, 51, 61, 0.25);
+}
+.arabic .signup-button {
+	font-family: var(--font-arabic);
 }
 
 .footer-section {
@@ -310,6 +400,12 @@
 	font-weight: 400;
 	line-height: normal;
 }
+.arabic .footer-brand-content {
+	font-family: var(--font-arabic);
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 140%;
+}
 .footer-list-title {
 	font-family: var(--font-semibold);
 	font-size: 16px;
@@ -319,6 +415,11 @@
 	line-height: normal;
 	background-color: transparent;
 }
+.arabic .footer-list-title {
+	font-family: var(--font-arabic);
+	font-size: 20px;
+	font-weight: 600;
+}
 .footer-list-item {
 	background-color: transparent;
 	font-family: var(--font-medium);
@@ -326,6 +427,9 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+}
+.arabic .footer-list-item {
+	font-family: var(--font-arabic);
 }
 .footer-copyright-section {
 	border-top: 1px solid #234e74;
@@ -338,6 +442,12 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+}
+.arabic .footer-copyright-text {
+	direction: ltr;
+}
+.social-profile.arabic .navbar-nav {
+	direction: ltr;
 }
 
 .language-text {
@@ -364,6 +474,9 @@ button.navbar-toggler:visited {
 	font-weight: 400;
 	line-height: 65px; /* 144.444% */
 }
+.arabic .data-driven-subtitle {
+	font-family: var(--font-arabic);
+}
 .single-data-image img {
 	border-radius: 20px;
 	background: #fff;
@@ -378,6 +491,10 @@ button.navbar-toggler:visited {
 	font-weight: 400;
 	line-height: 65px; /* 216.667% */
 }
+.arabic .single-data-content h3 {
+	font-family: 'Tajawal', sans-serif;
+	font-weight: 700;
+}
 .single-data-content p {
 	color: var(--grey-color-text);
 	font-family: var(--font-regular);
@@ -386,6 +503,10 @@ button.navbar-toggler:visited {
 	font-weight: 400;
 	line-height: normal;
 	letter-spacing: -0.36px;
+}
+.arabic .single-data-content p {
+	font-family: 'Tajawal', sans-serif;
+	letter-spacing: normal;
 }
 .platform-newsletter-section {
 	background-color: #153a5a;
@@ -402,11 +523,23 @@ button.navbar-toggler:visited {
 	filter: drop-shadow(0px 0px 4px rgba(47, 51, 61, 0.25));
 	border-radius: 15px;
 }
+
 .card.essential.position-relative {
 	right: -10px;
 }
+
 .card.custom.position-relative {
 	left: -10px;
+}
+.essential-col {
+	left: -15px;
+}
+.arabic .card.custom.position-relative {
+	right: -10px;
+}
+.arabic .card.essential.position-relative {
+	left: -10px;
+	right: inherit;
 }
 .popular-package {
 	border-radius: 15px;
@@ -429,6 +562,9 @@ button.navbar-toggler:visited {
 	font-weight: 700;
 	line-height: normal;
 }
+.arabic .card-title {
+	font-family: var(--font-arabic);
+}
 .popular-package .card-title {
 	color: #ef3054;
 }
@@ -440,6 +576,10 @@ button.navbar-toggler:visited {
 	font-weight: 400;
 	line-height: normal;
 }
+.arabic .card-subtitle {
+	font-family: var(--font-arabic);
+	color: var(--grey-color-text);
+}
 .price-text h3 {
 	color: #000;
 	text-align: center;
@@ -449,6 +589,9 @@ button.navbar-toggler:visited {
 	font-weight: 800;
 	line-height: normal;
 }
+.arabic .card.custom .price-text h3 {
+	font-family: 'Tajawal', sans-serif;
+}
 .price-text p {
 	color: #747474;
 	text-align: center;
@@ -457,6 +600,13 @@ button.navbar-toggler:visited {
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
+}
+
+.arabic .card .price-text p {
+	font-family: 'Tajawal', sans-serif;
+}
+.arabic .card .btn {
+	font-family: 'Tajawal', sans-serif;
 }
 .price-text li {
 	color: #000;
@@ -471,6 +621,14 @@ button.navbar-toggler:visited {
 ul.list-group li {
 	background-color: transparent;
 }
+.arabic .plan-table .table th {
+	font-family: var(--font-arabic);
+	font-weight: 600;
+}
+.arabic .plan-table .table td {
+	font-family: 'Tajawal', sans-serif;
+}
+
 .faq-text {
 	color: var(--primary-blue);
 	text-align: center;
@@ -479,6 +637,9 @@ ul.list-group li {
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+}
+.arabic .faq-text {
+	font-family: 'Tajawal', sans-serif;
 }
 .accordion-button:not(.collapsed) {
 	background-color: #ffffff;
@@ -493,14 +654,30 @@ ul.list-group li {
 	font-weight: 400;
 	line-height: 120%; /* 21.6px */
 }
+.arabic .accordion-button {
+	font-family: 'Tajawal', sans-serif;
+	font-weight: 700;
+	text-align: right;
+}
 .accordion-button:not(.collapsed)::after {
-	background-image: url('assets/images/chevron.down.svg');
+	background-image: url('../images/chevron.down.svg');
 	transform: rotate(0);
 }
 .accordion-button::after {
-	background-image: url('assets/images/chevron.right.svg');
+	background-image: url('../images/chevron.right.svg');
 	transition: 0.5s;
 }
+
+.arabic .accordion-button:not(.collapsed)::after {
+	background-image: url('../images/chevron.down.svg');
+	transform: rotate(0);
+}
+.arabic .accordion-button::after {
+	background-image: url('../images/arabic-images/chevron.right.svg');
+	transition: 0.5s;
+	margin-left: 0;
+}
+
 .accordion-body {
 	color: var(--grey-color-text);
 	font-family: var(--font-regular);
@@ -509,6 +686,10 @@ ul.list-group li {
 	font-weight: 400;
 	line-height: normal;
 	letter-spacing: -0.4px;
+}
+.arabic .accordion-body {
+	font-family: 'Tajawal', sans-serif;
+	text-align: right;
 }
 .plan-table table thead th {
 	color: #000;
@@ -533,6 +714,13 @@ ul.list-group li {
 .pricing-newsletter-section {
 	background: linear-gradient(225deg, #ffd8d4 0%, #fde8d3 100%);
 }
+/* .pricing-newsletter-section.arabic {
+	background-image: url(../../assets/images/arabic-images/pricing-signup-bg-ar.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	object-fit: contain;
+} */
 .pricing-signup {
 	color: #ef3054;
 	font-family: 'Fraunces', serif;
@@ -593,6 +781,17 @@ ul.list-group li {
 	font-weight: 400;
 	line-height: normal;
 	padding: 12px 16px;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+	color: #b2b7ba;
+}
+.arabic .contact-form input,
+.arabic .contact-form textarea {
+	font-family: var(--font-arabic);
+}
+.contact-form.arabic input[type='email'] {
+	text-align: right;
 }
 .form-bottom-text {
 	color: var(--grey-color-text);
@@ -698,6 +897,9 @@ ul.list-group li {
 	.hero-right-banner {
 		padding: 0;
 	}
+	.hero-left-arabic-banner {
+		padding: 0;
+	}
 	.single-feature-item {
 		padding: 10px;
 	}
@@ -767,11 +969,20 @@ ul.list-group li {
 	.footer-list-title {
 		font-size: 12px;
 	}
+	.arabic .footer-list-title {
+		font-family: var(--font-arabic);
+		font-size: 12px;
+		font-weight: 700;
+	}
 	.footer-list-item {
 		font-size: 10px;
 	}
 	.footer-copyright-text {
 		font-size: 12px;
+	}
+
+	.footer-list-items-arabic {
+		direction: ltr;
 	}
 
 	/* Platform Page */
@@ -799,6 +1010,9 @@ ul.list-group li {
 	/* Price Page */
 	.happy-woman-image.position-relative {
 		height: 100px;
+	}
+	.happy-woman-image .arabic-img {
+		right: -50% !important;
 	}
 	.mobile.card-header {
 		font-size: 10px;
@@ -863,11 +1077,15 @@ ul.list-group li {
 	}
 	button#nav-essential-tab {
 		border-radius: 10px 0 0 10px;
-		/* border-right: 1px solid transparent; */
 	}
 	button#nav-custom-tab {
 		border-radius: 0 10px 10px 0;
-		/* border-left: 1px solid transparent; */
+	}
+	.arabic button#nav-essential-tab {
+		border-radius: 0 10px 10px 0;
+	}
+	.arabic button#nav-custom-tab {
+		border-radius: 10px 0 0 10px;
 	}
 	button#nav-custom-tab .nav-link.active {
 		border-left: 1px solid var(--orange-primary-color);
@@ -884,12 +1102,24 @@ ul.list-group li {
 		text-transform: capitalize;
 		letter-spacing: normal;
 	}
-	button.accordion-button {
+	.accordion-flush .accordion-item {
+		border-radius: 15px;
+	}
+	.accordion-flush .accordion-item .accordion-button,
+	.accordion-flush .accordion-item .accordion-button.collapsed {
+		border-radius: 15px !important;
+	}
+	.accordion-button:not(.collapsed),
+	.accordion-button {
 		font-size: 15px;
 	}
+
 	.accordion-body {
 		font-size: 12px;
 		letter-spacing: normal;
+	}
+	.pricing-signup-img {
+		width: 55%;
 	}
 
 	/* Conact Page */
@@ -922,6 +1152,9 @@ ul.list-group li {
 		font-family: var(--font-semibold);
 		font-size: 20px;
 		font-weight: 600;
+	}
+	.thankyou-image {
+		width: 25%;
 	}
 	.thankyou-social-profile p {
 		font-size: 12px;
