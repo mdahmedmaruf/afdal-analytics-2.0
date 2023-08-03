@@ -65,7 +65,7 @@
 	font-family: var(--font-arabic);
 	font-weight: 700;
 }
-.registration-btn button {
+.registration-btn a {
 	color: var(--orange-primary-color);
 	font-family: var(--font-regular);
 	font-size: 20px;
@@ -914,6 +914,58 @@ ul.list-group li {
 	background-color: #153a5a;
 }
 
+/* Signup Signin Page CSS */
+.section-title.reg-signup-text.px-5 {
+	font-size: 48px;
+	text-transform: capitalize;
+	font-weight: 600 !important;
+	line-height: normal;
+}
+.text-content.signup-text {
+	font-size: 14px;
+}
+.section-title.reg-signup-title {
+	font-size: 64px;
+	text-transform: capitalize;
+	line-height: normal;
+}
+.signup-form-section.text-center p {
+	font-family: var(--font-regular);
+	font-size: 18px;
+	color: #0b243a;
+	line-height: normal;
+}
+.reg-signup-form label {
+	font-family: var(--font-regular);
+	font-size: 14px;
+	color: var(--primary-blue);
+}
+.reg-signup-form input::placeholder {
+	font-family: var(--font-regular);
+	font-size: 14px;
+	color: #b6beca;
+}
+.reg-signup-form input {
+	font-family: var(--font-regular);
+	font-size: 14px;
+	color: var(--primary-blue);
+	border-radius: 10px;
+}
+.reg-signup-form input[type='text'],
+.reg-signup-form input[type='tel'],
+.reg-signup-form input[type='email'],
+.reg-signup-form input[type='password'] {
+	padding: 10px 15px;
+}
+.signin-text {
+	font-size: 14px !important;
+	color: var(--primary-blue);
+}
+.forgat-password-text {
+	font-family: var(--font-regular);
+	font-size: 14px;
+}
+
 /* Responsive CSS */
 @media (min-width: 768px) {
 	/* .header-nav {
@@ -1254,5 +1306,10 @@ ul.list-group li {
 	.blog-excerpt {
 		font-size: 10px;
 		line-height: 140%;
+	}
+
+	/* Registration Page CSS */
+	.section-title.reg-signup-title {
+		font-size: 36px;
 	}
 }

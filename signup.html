@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Thank You | Afdal Analytics 2.0</title>
+		<title>Home | Afdal Analytics 2.0</title>
 		<link href="assets/css/main.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
@@ -25,7 +25,7 @@
 				<div class="mobile-right">
 					<a
 						class="d-md-none d-flex-row language-text text-decoration-none"
-						href="ar/thankyou-ar.html"
+						href="ar/index-ar.html"
 						>AR</a
 					>
 					<button
@@ -42,23 +42,21 @@
 				</div>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<div
-						class="d-flex justify-content-center py-2 py-md-0 d-block d-md-none registration-nav"
+						class="d-flex justify-content-center py-2 py-md-0 d-block d-md-none g-0 registration-nav"
 					>
 						<div class="registration-btn btn-group my-3">
-							<a
-								href="signin.html"
+							<button
 								class="btn btn-outline-primary rounded-start-2 rounded-end-0 me-0 shadow-none"
-								role="button"
+								type="button"
 							>
 								Login
-							</a>
-							<a
-								href="signup.html"
+							</button>
+							<button
 								class="btn btn-primary text-white rounded-start-0 rounded-end-2 ms-0 shadow-none"
-								role="button"
+								type="button"
 							>
 								Sign Up
-							</a>
+							</button>
 						</div>
 					</div>
 
@@ -66,7 +64,12 @@
 						class="navbar-nav main-navigation text-center m-auto mt-0 mb-2 mb-lg-0"
 					>
 						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home</a>
+							<a
+								class="nav-link active text-primary"
+								aria-current="page"
+								href="index.html"
+								>Home</a
+							>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="platform.html">Platform</a>
@@ -75,15 +78,10 @@
 							<a class="nav-link" href="pricing.html">Pricing</a>
 						</li>
 						<li class="nav-item">
-							<a
-								class="nav-link active text-primary"
-								aria-current="page"
-								href="contact.html"
-								>Contact Us</a
-							>
+							<a class="nav-link" href="contact.html">Contact Us</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="ar/thankyou-ar.html">العربية</a>
+						<li class="nav-item d-none d-md-block">
+							<a class="nav-link" href="ar/index-ar.html">العربية</a>
 						</li>
 					</ul>
 
@@ -104,140 +102,141 @@
 				</div>
 			</div>
 		</nav>
-		<section class="hero-section py-5">
-			<div class="container-lg">
-				<div class="row justify-content-center text-center">
-					<div class="col-md-12 py-4">
-						<h1 class="hero-title section-title text-primary thankyou-title">
-							Thank you
-						</h1>
-						<h2 class="thankyou-subtitle">Welcome to our Community</h2>
-						<p
-							class="hero-content contact-text thankyou-text px-3 px-md-5 mx-0 mx-md-5"
-						>
-							<span class="mb-3 mb-md-1 mt-2"
-								>we are delighted to have you with us</span
-							>
-							One of our team will contact you soon In the meantime, don’t miss
-							any updates
-						</p>
-						<img
-							src="assets/images/thankyou-image.svg"
-							alt="thankyou image"
-							class="thankyou-image"
-						/>
-					</div>
-				</div>
-				<div class="row justify-content-center py-0 py-md-4">
-					<div class="col-12 col-md-6">
-						<div class="thankyou-social-profile text-center">
-							<p class="mb-0">Follow us on our social media channels</p>
-							<div class="thankyou-social-profile-icons">
-								<div class="navbar navbar-expand justify-content-center">
-									<ul class="navbar-nav">
-										<li class="nav-item">
-											<a class="nav-link" href="#">
-												<svg
-													width="49"
-													height="48"
-													viewBox="0 0 49 48"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														d="M48.5 24.001C48.5 10.7447 37.7562 0.000976562 24.5 0.000976562C11.2438 0.000976562 0.5 10.7447 0.5 24.001C0.5 35.9822 9.275 45.9104 20.75 47.7104V30.9385H14.6562V24.001H20.75V18.7135C20.75 12.6994 24.3313 9.37598 29.8156 9.37598C32.4406 9.37598 35.1875 9.84473 35.1875 9.84473V15.751H32.1594C29.1781 15.751 28.25 17.6025 28.25 19.501V24.001H34.9062L33.8422 30.9385H28.25V47.7104C39.725 45.9104 48.5 35.9822 48.5 24.001Z"
-														fill="#1877F2"
-													/>
-													<path
-														d="M33.8422 30.9385L34.9062 24.001H28.25V19.501C28.25 17.6025 29.1781 15.751 32.1594 15.751H35.1875V9.84473C35.1875 9.84473 32.4406 9.37598 29.8156 9.37598C24.3313 9.37598 20.75 12.6994 20.75 18.7135V24.001H14.6562V30.9385H20.75V47.7104C21.9734 47.9025 23.225 48.001 24.5 48.001C25.775 48.001 27.0266 47.9025 28.25 47.7104V30.9385H33.8422Z"
-														fill="white"
-													/>
-												</svg>
-											</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">
-												<svg
-													width="49"
-													height="48"
-													viewBox="0 0 49 48"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<circle
-														cx="24.5"
-														cy="24.001"
-														r="24"
-														fill="url(#paint0_linear_8477_137508)"
-													/>
-													<path
-														fill-rule="evenodd"
-														clip-rule="evenodd"
-														d="M24.3012 11.001C20.8249 11.001 20.3886 11.0162 19.0233 11.0783C17.6606 11.1407 16.7305 11.3564 15.9166 11.673C15.0747 11.9999 14.3606 12.4373 13.6491 13.149C12.9371 13.8605 12.4997 14.5746 12.1717 15.4162C11.8544 16.2304 11.6384 17.1608 11.5771 18.5229C11.516 19.8883 11.5 20.3248 11.5 23.8011C11.5 27.2774 11.5155 27.7124 11.5773 29.0777C11.64 30.4404 11.8557 31.3705 12.172 32.1844C12.4992 33.0263 12.9365 33.7404 13.6483 34.4519C14.3595 35.1639 15.0736 35.6023 15.915 35.9292C16.7294 36.2458 17.6598 36.4615 19.0222 36.5239C20.3876 36.586 20.8236 36.6012 24.2996 36.6012C27.7762 36.6012 28.2111 36.586 29.5765 36.5239C30.9391 36.4615 31.8703 36.2458 32.6848 35.9292C33.5264 35.6023 34.2394 35.1639 34.9506 34.4519C35.6627 33.7404 36.1 33.0263 36.428 32.1847C36.7427 31.3705 36.9587 30.4401 37.0227 29.078C37.084 27.7126 37.1 27.2774 37.1 23.8011C37.1 20.3248 37.084 19.8885 37.0227 18.5232C36.9587 17.1605 36.7427 16.2304 36.428 15.4165C36.1 14.5746 35.6627 13.8605 34.9506 13.149C34.2386 12.437 33.5266 11.9997 32.684 11.673C31.8679 11.3564 30.9373 11.1407 29.5746 11.0783C28.2092 11.0162 27.7746 11.001 24.2972 11.001H24.3012ZM23.8743 13.3075H23.8746L24.3012 13.3077C27.7188 13.3077 28.1239 13.3199 29.4735 13.3813C30.7215 13.4383 31.3989 13.6469 31.8501 13.8221C32.4474 14.0541 32.8733 14.3314 33.321 14.7794C33.769 15.2274 34.0464 15.6541 34.2789 16.2514C34.4541 16.7021 34.6629 17.3794 34.7197 18.6275C34.781 19.9768 34.7944 20.3821 34.7944 23.7982C34.7944 27.2142 34.781 27.6195 34.7197 28.9689C34.6626 30.2169 34.4541 30.8943 34.2789 31.3449C34.0469 31.9423 33.769 32.3676 33.321 32.8153C32.873 33.2633 32.4477 33.5407 31.8501 33.7727C31.3994 33.9487 30.7215 34.1567 29.4735 34.2138C28.1242 34.2751 27.7188 34.2884 24.3012 34.2884C20.8833 34.2884 20.4782 34.2751 19.1289 34.2138C17.8809 34.1562 17.2035 33.9476 16.7521 33.7724C16.1547 33.5404 15.728 33.2631 15.28 32.8151C14.832 32.3671 14.5547 31.9415 14.3222 31.3439C14.147 30.8932 13.9382 30.2158 13.8814 28.9678C13.82 27.6185 13.8078 27.2131 13.8078 23.795C13.8078 20.3768 13.82 19.9736 13.8814 18.6243C13.9384 17.3762 14.147 16.6989 14.3222 16.2477C14.5542 15.6504 14.832 15.2237 15.28 14.7757C15.728 14.3277 16.1547 14.0503 16.7521 13.8178C17.2033 13.6418 17.8809 13.4338 19.1289 13.3765C20.3097 13.3231 20.7673 13.3071 23.1529 13.3045V13.3077C23.3758 13.3073 23.6156 13.3074 23.8743 13.3075ZM29.5978 16.9685C29.5978 16.1202 30.2858 15.433 31.1338 15.433V15.4325C31.9818 15.4325 32.6698 16.1205 32.6698 16.9685C32.6698 17.8165 31.9818 18.5045 31.1338 18.5045C30.2858 18.5045 29.5978 17.8165 29.5978 16.9685ZM24.3009 17.2277C20.6709 17.2278 17.7278 20.171 17.7278 23.8011C17.7278 27.4313 20.671 30.3732 24.3012 30.3732C27.9314 30.3732 30.8735 27.4313 30.8735 23.8011C30.8735 20.1709 27.9311 17.2277 24.3009 17.2277ZM28.5679 23.8011C28.5679 21.4446 26.6575 19.5344 24.3012 19.5344C21.9446 19.5344 20.0345 21.4446 20.0345 23.8011C20.0345 26.1574 21.9446 28.0678 24.3012 28.0678C26.6575 28.0678 28.5679 26.1574 28.5679 23.8011Z"
-														fill="white"
-													/>
-													<defs>
-														<linearGradient
-															id="paint0_linear_8477_137508"
-															x1="10.7"
-															y1="42.601"
-															x2="42.5"
-															y2="9.60098"
-															gradientUnits="userSpaceOnUse"
-														>
-															<stop stop-color="#EEA054" />
-															<stop offset="0.502762" stop-color="#D64763" />
-															<stop offset="1" stop-color="#B62A99" />
-														</linearGradient>
-													</defs>
-												</svg>
-											</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">
-												<svg
-													width="49"
-													height="48"
-													viewBox="0 0 49 48"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														d="M0.5 24.001C0.5 10.7461 11.2452 0.000976562 24.5 0.000976562C37.7548 0.000976562 48.5 10.7461 48.5 24.001C48.5 37.2558 37.7548 48.001 24.5 48.001C11.2452 48.001 0.5 37.2558 0.5 24.001Z"
-														fill="#0077B5"
-													/>
-													<path
-														fill-rule="evenodd"
-														clip-rule="evenodd"
-														d="M17.819 14.8237C17.819 16.3928 16.6378 17.6483 14.7414 17.6483H14.7066C12.8807 17.6483 11.7002 16.3928 11.7002 14.8237C11.7002 13.2214 12.9166 12.001 14.7772 12.001C16.6378 12.001 17.7837 13.2214 17.819 14.8237ZM17.4607 19.8788V36.2205H12.0218V19.8788H17.4607ZM37.0754 36.2205L37.0756 26.8507C37.0756 21.8312 34.3924 19.4951 30.8133 19.4951C27.9256 19.4951 26.6327 21.0812 25.9109 22.1939V19.8793H20.4713C20.543 21.4127 20.4713 36.221 20.4713 36.221H25.9109V27.0944C25.9109 26.606 25.9462 26.1188 26.09 25.7691C26.4831 24.7934 27.3781 23.7832 28.8807 23.7832C30.8496 23.7832 31.6367 25.2817 31.6367 27.4777V36.2205H37.0754Z"
-														fill="white"
-													/>
-												</svg>
-											</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">
-												<svg
-													width="49"
-													height="48"
-													viewBox="0 0 49 48"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														d="M0.5 24.001C0.5 10.7461 11.2452 0.000976562 24.5 0.000976562C37.7548 0.000976562 48.5 10.7461 48.5 24.001C48.5 37.2558 37.7548 48.001 24.5 48.001C11.2452 48.001 0.5 37.2558 0.5 24.001Z"
-														fill="#55ACEE"
-													/>
-													<path
-														d="M23.7812 19.5089L23.8316 20.3393L22.9922 20.2376C19.9369 19.8478 17.2677 18.5259 15.0013 16.3057L13.8934 15.2041L13.608 16.0176C13.0036 17.831 13.3897 19.7461 14.6488 21.0342C15.3203 21.746 15.1692 21.8477 14.0109 21.424C13.608 21.2884 13.2554 21.1867 13.2219 21.2376C13.1044 21.3562 13.5073 22.8985 13.8262 23.5086C14.2627 24.356 15.1524 25.1865 16.1261 25.678L16.9487 26.0678L15.975 26.0847C15.0349 26.0847 15.0013 26.1017 15.1021 26.4576C15.4378 27.5592 16.764 28.7286 18.2413 29.237L19.2822 29.593L18.3756 30.1353C17.0326 30.9149 15.4546 31.3556 13.8766 31.3894C13.1211 31.4064 12.5 31.4742 12.5 31.525C12.5 31.6945 14.5481 32.6436 15.74 33.0165C19.3157 34.1181 23.563 33.6435 26.7526 31.7623C29.0189 30.4234 31.2852 27.7626 32.3428 25.1865C32.9136 23.8137 33.4844 21.3054 33.4844 20.102C33.4844 19.3224 33.5347 19.2208 34.4748 18.2886C35.0288 17.7463 35.5492 17.1531 35.65 16.9836C35.8178 16.6616 35.8011 16.6616 34.9449 16.9497C33.518 17.4582 33.3165 17.3904 34.0216 16.6277C34.542 16.0854 35.1631 15.1024 35.1631 14.8143C35.1631 14.7634 34.9113 14.8482 34.6259 15.0007C34.3238 15.1702 33.6523 15.4244 33.1486 15.5769L32.2421 15.865L31.4195 15.3058C30.9663 15.0007 30.3283 14.6617 29.9926 14.56C29.1364 14.3228 27.827 14.3567 27.0548 14.6278C24.9563 15.3905 23.6301 17.3565 23.7812 19.5089Z"
-														fill="white"
-													/>
-												</svg>
-											</a>
-										</li>
-									</ul>
-								</div>
+
+		<section class="signup-section">
+			<div class="container-fluid">
+				<div class="row justify-content-center">
+					<div class="col-md-7 py-5 text-bg-section text-center">
+						<div class="signup-header-text px-5 d-none d-md-block">
+							<h1 class="section-title reg-signup-text px-5">
+								<span class="text-primary">Unleash</span> The Real Power Of
+								Marketing Data
+							</h1>
+							<div class="text-content signup-text">
+								<p>
+									Use Afdal Analytics to track campaigns across different
+									channels. Gain more insight about your customer. Visualize
+									data from versatile reporting and dashboards.
+								</p>
 							</div>
+						</div>
+						<div class="signup-image">
+							<img
+								src="assets/images/signup-image.svg"
+								alt="signup image"
+								class="img-fluid w-75"
+							/>
+						</div>
+					</div>
+					<div class="col-md-5 p-3 p-md-5">
+						<div class="signup-form-section text-center">
+							<h1 class="section-title reg-signup-title">Sign Up</h1>
+							<p>Already have an account? <a href="signin.html">Sign in</a></p>
+							<form class="row reg-signup-form g-3 text-start">
+								<div class="col-md-6">
+									<label for="first-name" class="form-label"
+										>First Name <span>*</span></label
+									>
+									<input
+										type="text"
+										class="form-control"
+										id="first-name"
+										placeholder="First Name"
+									/>
+								</div>
+								<div class="col-md-6">
+									<label for="last-name" class="form-label"
+										>Last Name <span>*</span></label
+									>
+									<input
+										type="text"
+										class="form-control"
+										id="last-name"
+										placeholder="Last Name"
+									/>
+								</div>
+								<div class="col-12">
+									<label for="company" class="form-label"
+										>Company Name <span>*</span></label
+									>
+									<input
+										type="text"
+										class="form-control"
+										id="company"
+										placeholder="Company Name"
+									/>
+								</div>
+
+								<div class="col-12">
+									<label for="phone" class="form-label"
+										>Phone <span>*</span></label
+									>
+									<input
+										type="tel"
+										class="form-control"
+										id="phone"
+										placeholder="+91 90001 90001"
+									/>
+								</div>
+
+								<div class="col-12">
+									<label for="email" class="form-label"
+										>Email <span>*</span></label
+									>
+									<input
+										type="email"
+										class="form-control"
+										id="email"
+										placeholder="email@companyexample.com"
+									/>
+								</div>
+								<div class="col-12">
+									<label
+										for="password"
+										class="form-label"
+										aria-placeholder="123456"
+										>Password <span>*</span></label
+									>
+									<input
+										type="password"
+										class="form-control mb-3"
+										id="password"
+									/>
+									<input type="password" class="form-control" id="password" />
+								</div>
+								<div class="col-12">
+									<div class="form-check">
+										<input
+											class="form-check-input"
+											type="checkbox"
+											id="policy"
+										/>
+										<label class="form-check-label" for="policy">
+											I agree to Afdal Analytics Privacy Policy and Cookies
+											Policy
+										</label>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-check">
+										<input
+											class="form-check-input"
+											type="checkbox"
+											id="keepsignin"
+										/>
+										<label class="form-check-label" for="keepsignin">
+											Keep me signed in
+										</label>
+									</div>
+								</div>
+
+								<div class="col-12 text-center">
+									<button type="submit" class="btn btn-primary">Sign Up</button>
+								</div>
+								<p class="signin-text text-center">
+									You have an account? <a href="signin.html">Sing in</a>
+								</p>
+							</form>
 						</div>
 					</div>
 				</div>
