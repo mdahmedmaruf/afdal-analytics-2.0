@@ -171,6 +171,8 @@
 	border-radius: 15px;
 	padding: 15px 30px;
 	box-shadow: 0px 0px 8px 0px rgba(47, 51, 61, 0.25);
+	line-height: normal;
+	color: #ffffff;
 }
 .arabic .btn-primary {
 	font-family: var(--font-arabic);
@@ -522,6 +524,7 @@ button.navbar-toggler:visited {
 .card {
 	filter: drop-shadow(0px 0px 4px rgba(47, 51, 61, 0.25));
 	border-radius: 15px;
+	border: 0;
 }
 
 .card.essential.position-relative {
@@ -838,6 +841,67 @@ ul.list-group li {
 .not-found-title {
 	font-size: 64px;
 	text-transform: capitalize;
+}
+
+/* Blog Page */
+.blog-tags .btn-outline-primary,
+.blog-tags .btn-primary {
+	padding: 10px 30px;
+	box-shadow: 0px 0px 4px 0px rgba(47, 51, 61, 0.25);
+}
+.serach-button {
+	right: 90%;
+}
+.blog-date {
+	font-family: var(--font-arabic);
+	font-size: 13px;
+	font-weight: 700;
+	color: #b0bbcb;
+}
+.blog-title a {
+	font-family: var(--font-arabic);
+	font-size: 22px;
+	font-weight: 700;
+	color: #0b243a;
+	text-decoration: none;
+	line-height: 170.7%;
+}
+.blog-excerpt {
+	font-family: var(--font-arabic);
+	font-size: 15px;
+	font-weight: 400;
+	color: #7e92ac;
+	line-height: 172.2%;
+}
+.single-blog-main-content h4 {
+	color: #356792;
+	font-size: 18px;
+	font-weight: 700;
+}
+.single-blog-main-content p {
+	font-family: var(--font-arabic);
+	font-weight: 300;
+	font-size: 18px;
+}
+.single-blog-newsletter-section {
+	background: linear-gradient(225deg, #ffd8d4 0%, #fde8d3 100%);
+}
+
+/* Gallery CSS */
+.gallery-title a {
+	font-family: var(--font-arabic);
+	font-size: 22px;
+	font-weight: 700;
+	color: #0b243a;
+	text-decoration: none;
+	line-height: 170.7%;
+}
+.gallery-excerpt {
+	font-family: var(--font-arabic);
+	font-size: 15px;
+	font-weight: 400;
+	color: #7e92ac;
+	line-height: 172.2%;
 }
 
 /* Responsive CSS */
@@ -1161,5 +1225,18 @@ ul.list-group li {
 	}
 	.thankyou-social-profile-icons svg {
 		width: 35px;
+	}
+
+	/* Blog Page CSS */
+	.blog-date {
+		font-size: 8px;
+	}
+	.blog-title a {
+		font-size: 12px;
+		line-height: 100% !important;
+	}
+	.blog-excerpt {
+		font-size: 10px;
+		line-height: 140%;
 	}
 }
