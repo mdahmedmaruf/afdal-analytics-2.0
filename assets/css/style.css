@@ -318,6 +318,15 @@
 	font-family: var(--font-arabic);
 }
 
+.headline.section-title {
+	font-size: 35px;
+	font-weight: 600;
+}
+.home-blog-button {
+	font-size: 18px;
+	padding: 10px 20px;
+}
+
 .newsletter-section {
 	background-image: radial-gradient(
 		50% 50% at 50% 50%,
@@ -354,8 +363,6 @@
 .signup-form {
 	border-radius: 15px;
 	background: #fff;
-
-	/* Medium shadow-8px */
 	box-shadow: 0px 0px 8px 0px rgba(47, 51, 61, 0.25);
 }
 .signup-form input {
@@ -903,6 +910,9 @@ ul.list-group li {
 	color: #7e92ac;
 	line-height: 172.2%;
 }
+.guide-newsletter-section {
+	background-color: #153a5a;
+}
 
 /* Responsive CSS */
 @media (min-width: 768px) {
@@ -1006,6 +1016,12 @@ ul.list-group li {
 	.btn-outline-primary {
 		font-size: 12px;
 		padding: 10px 20px;
+	}
+	.headline.section-title {
+		font-size: 20px;
+	}
+	.home-blog-button {
+		font-size: 10px;
 	}
 	.signup-title {
 		font-size: 21px;
