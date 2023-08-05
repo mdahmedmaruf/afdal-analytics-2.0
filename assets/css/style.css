@@ -1076,6 +1076,13 @@ form label span {
 	top: 24%;
 }
 
+h1#exampleModalLabel {
+	font-family: var(--font-medium);
+}
+#model-close-btn {
+	font-family: var(--font-medium);
+}
+
 /* Responsive CSS */
 @media (min-width: 768px) {
 	/* .header-nav {
