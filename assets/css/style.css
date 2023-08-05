@@ -45,7 +45,10 @@
 	gap: 54px;
 }
 .main-navigation.arabic {
-	gap: 15px;
+	gap: 20px;
+}
+.dropdown-menu[data-bs-popper] {
+	left: -22px;
 }
 .main-navigation a {
 	font-family: var(--font-regular);
@@ -53,6 +56,7 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+	color: #0b243a;
 }
 .nav-link.active {
 	font-family: var(--font-bold);
@@ -64,6 +68,23 @@
 .main-navigation.arabic .nav-link.active {
 	font-family: var(--font-arabic);
 	font-weight: 700;
+}
+.blog-dropdown {
+	left: -25%;
+}
+.dropdown-menu {
+	background: #ffffff;
+	border: 0;
+	width: 220px;
+	box-shadow: 0px 0px 8px 0px rgba(47, 51, 61, 0.25);
+}
+.dropdown-menu.show {
+	display: inline-block;
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+	color: var(--orange-primary-color);
+	background-color: transparent;
 }
 .registration-btn a {
 	color: var(--orange-primary-color);
@@ -174,6 +195,11 @@
 	line-height: normal;
 	color: #ffffff;
 }
+.btn.btn-link {
+	padding: 15px 30px;
+	text-decoration: none;
+	border-radius: 15px;
+}
 .arabic .btn-primary {
 	font-family: var(--font-arabic);
 	font-weight: 700;
@@ -225,7 +251,10 @@
 .single-feature-item {
 	border-radius: 10px;
 	box-shadow: 0px 0px 8px 0px rgba(47, 51, 61, 0.25);
-	padding: 42px 20px;
+	padding: 25px;
+	position: relative;
+	width: 233px;
+	height: 233px;
 }
 
 .boost-icon {
@@ -259,7 +288,7 @@
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 700;
-	line-height: 16.9%; /* 2.704px */
+	line-height: 100.2%; /* 2.704px */
 }
 .arabic .feature-text h5 {
 	font-family: var(--font-arabic);
@@ -280,7 +309,11 @@
 }
 
 .business-reinvent {
-	background: linear-gradient(360deg, #0b243a 0%, #234e74 100%);
+	background: url('../images/business-reinvent-bg.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	object-fit: contain;
 }
 .reinvent-section-title {
 	font-family: 'Fraunces', serif;
@@ -328,11 +361,10 @@
 }
 
 .newsletter-section {
-	background-image: radial-gradient(
-		50% 50% at 50% 50%,
-		#ffa04d 0%,
-		#fa8f03 100%
-	);
+	background-image: url('../images/home-newsletter-bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
 .signup-title {
 	color: var(--primary-blue);
@@ -487,6 +519,9 @@ button.navbar-toggler:visited {
 	font-family: var(--font-arabic);
 }
 .single-data-image img {
+	position: relative;
+	width: 260px;
+	height: 260px;
 	border-radius: 20px;
 	background: #fff;
 	padding: 25px;
@@ -518,7 +553,10 @@ button.navbar-toggler:visited {
 	letter-spacing: normal;
 }
 .platform-newsletter-section {
-	background-color: #153a5a;
+	background-image: url('../images/platform-newsletter-bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
 
 /* Pricing Page CSS */
@@ -621,12 +659,15 @@ button.navbar-toggler:visited {
 .price-text li {
 	color: #000;
 	font-family: var(--font-regular);
-	font-size: 12px;
+	font-size: 15px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
 	border-top: 1px solid #b0bbcb;
 	border-bottom: 1px solid #b0bbcb;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
 }
 ul.list-group li {
 	background-color: transparent;
@@ -668,6 +709,10 @@ ul.list-group li {
 	font-family: 'Tajawal', sans-serif;
 	font-weight: 700;
 	text-align: right;
+}
+.accordion-button:not(.collapsed),
+.accordion-button.collapsed {
+	justify-content: space-between;
 }
 .accordion-button:not(.collapsed)::after {
 	background-image: url('../images/chevron.down.svg');
@@ -721,16 +766,21 @@ ul.list-group li {
 	letter-spacing: -0.25px;
 	padding: 20px;
 }
-.pricing-newsletter-section {
-	background: linear-gradient(225deg, #ffd8d4 0%, #fde8d3 100%);
+.pricing-signup-img {
+	width: 50%;
 }
-/* .pricing-newsletter-section.arabic {
-	background-image: url(../../assets/images/arabic-images/pricing-signup-bg-ar.svg);
+.pricing-newsletter-section {
+	background-image: url('../images/pricing-newsletter-bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.pricing-newsletter-section.arabic {
+	background-image: url(../images/arabic-images/pricing-newsletter-bg-ar.svg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	object-fit: contain;
-} */
+}
 .pricing-signup {
 	color: #ef3054;
 	font-family: 'Fraunces', serif;
@@ -810,6 +860,11 @@ ul.list-group li {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 160%; /* 35.2px */
+}
+.arabic .form-bottom-text {
+	font-family: 'Tajawal', sans-serif;
+	font-size: 20px;
+	color: #637484;
 }
 
 /* Thank you Page */
@@ -895,6 +950,13 @@ ul.list-group li {
 }
 
 /* Gallery CSS */
+.guide-form-top-text p {
+	font-family: var(--font-arabic);
+	font-weight: 500;
+	color: var(--grey-color-text);
+	font-size: 18px;
+	line-height: 140%;
+}
 .gallery-title a {
 	font-family: var(--font-arabic);
 	font-size: 22px;
@@ -915,6 +977,9 @@ ul.list-group li {
 }
 
 /* Signup Signin Page CSS */
+form label span {
+	color: #eb001b;
+}
 .section-title.reg-signup-text.px-5 {
 	font-size: 48px;
 	text-transform: capitalize;
@@ -965,6 +1030,51 @@ ul.list-group li {
 	font-family: var(--font-regular);
 	font-size: 14px;
 }
+.reset-text {
+	font-size: 14px !important;
+}
+.reset-text:before,
+.reset-text:after {
+	background-color: #000;
+	content: '';
+	display: inline-block;
+	height: 1px;
+	position: relative;
+	vertical-align: middle;
+	width: 20%;
+}
+.reset-text:before {
+	right: 0.5em;
+	margin-left: -50%;
+}
+.reset-text:after {
+	left: 0.5em;
+	margin-right: -50%;
+}
+.have-account p {
+	font-size: 14px !important;
+}
+.back-login-text {
+	font-size: 18px;
+}
+.open-eye-img {
+	right: 24px;
+	bottom: 14px;
+}
+.arabic.open-eye-img {
+	left: 24px !important;
+	right: inherit;
+}
+.arabic.open-eye-img.signup-1 {
+	left: 24px !important;
+	right: inherit;
+	top: 50%;
+}
+.arabic.open-eye-img.signup-2 {
+	left: 24px !important;
+	right: inherit;
+	top: 24%;
+}
 
 /* Responsive CSS */
 @media (min-width: 768px) {
@@ -984,11 +1094,26 @@ ul.list-group li {
 }
 
 @media (max-width: 767px) {
+	.navbar-toggler:focus {
+		text-decoration: none;
+		outline: 0;
+		box-shadow: none;
+	}
 	.main-navigation {
 		gap: 10px;
 	}
 	.nav-link.active {
 		font-family: var(--font-regular);
+	}
+	.blog-dropdown {
+		left: 0;
+	}
+	.dropdown-menu {
+		background: #e4eaf2;
+		border: 0;
+	}
+	.dropdown-menu li a {
+		color: #234e74;
 	}
 	.hero-keywords {
 		font-family: var(--font-bold);
@@ -1027,7 +1152,12 @@ ul.list-group li {
 		padding: 0;
 	}
 	.single-feature-item {
-		padding: 10px;
+		padding: 12px;
+		width: auto;
+		height: 185px;
+	}
+	.arabic .single-feature-item {
+		height: 210px;
 	}
 	.feature-text h5 {
 		font-size: 12px;
@@ -1035,6 +1165,7 @@ ul.list-group li {
 	}
 	.feature-text p {
 		font-size: 11px;
+		margin-top: 10px;
 	}
 	.section-title {
 		font-size: 20px;
@@ -1126,7 +1257,8 @@ ul.list-group li {
 	.single-data-image img {
 		padding: 12px;
 		box-shadow: 0px 0px 4px 0px rgba(36, 38, 114, 0.11);
-		width: 130px;
+		width: 200px;
+		height: auto;
 	}
 	.single-data-content h3 {
 		font-family: var(--font-semibold);
@@ -1251,7 +1383,14 @@ ul.list-group li {
 		letter-spacing: normal;
 	}
 	.pricing-signup-img {
-		width: 55%;
+		width: 40%;
+	}
+	.pricing-newsletter-section,
+	.pricing-newsletter-section.arabic {
+		background-image: url(../images/arabic-images/pricing-newsletter-mobile-bg-ar.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
 	}
 
 	/* Conact Page */
@@ -1306,6 +1445,10 @@ ul.list-group li {
 	.blog-excerpt {
 		font-size: 10px;
 		line-height: 140%;
+	}
+
+	.guide-form-top-text p {
+		font-size: 12px;
 	}
 
 	/* Registration Page CSS */
