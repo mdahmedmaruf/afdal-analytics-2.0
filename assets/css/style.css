@@ -50,6 +50,10 @@
 .dropdown-menu[data-bs-popper] {
 	left: -22px;
 }
+.dropdown-item.active,
+.dropdown-item:active {
+	background-color: transparent;
+}
 .main-navigation a {
 	font-family: var(--font-regular);
 	font-size: 20px;
@@ -1143,6 +1147,142 @@ table.table.table-borderless.arabic-letters td a:hover {
 	border-radius: 10px;
 }
 
+/* country select */
+.select-box {
+	position: relative;
+
+	width: 26rem;
+}
+
+.select-box input {
+	width: 100%;
+	padding: 1rem 0.6rem;
+	font-size: 1.1rem;
+
+	border: 0.1rem solid transparent;
+	outline: none;
+}
+
+input[type='tel'] {
+	border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.select-box input:focus {
+	border: 0.1rem solid var(--primary);
+}
+
+.selected-option {
+	background-color: #eee;
+	border-radius: 0.5rem;
+	overflow: hidden;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.selected-option div {
+	position: relative;
+
+	width: 6rem;
+	padding: 0 2.8rem 0 0.5rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+.selected-option div::after {
+	position: absolute;
+	content: '';
+	right: 0.8rem;
+	top: 50%;
+	transform: translateY(-50%) rotate(45deg);
+
+	width: 0.8rem;
+	height: 0.8rem;
+	border-right: 0.12rem solid var(--primary);
+	border-bottom: 0.12rem solid var(--primary);
+
+	transition: 0.2s;
+}
+
+.selected-option div.active::after {
+	transform: translateY(-50%) rotate(225deg);
+}
+
+.select-box .options {
+	position: absolute;
+	top: 4rem;
+
+	width: 100%;
+	background-color: #fff;
+	border-radius: 0.5rem;
+
+	display: none;
+}
+
+.select-box .options.active {
+	display: block;
+}
+
+.select-box .options::before {
+	position: absolute;
+	content: '';
+	left: 1rem;
+	top: -1.2rem;
+
+	width: 0;
+	height: 0;
+	border: 0.6rem solid transparent;
+	border-bottom-color: var(--primary);
+}
+
+input.search-box {
+	background-color: var(--primary);
+	color: #fff;
+	border-radius: 0.5rem 0.5rem 0 0;
+	padding: 1.4rem 1rem;
+}
+
+.select-box ol {
+	list-style: none;
+	max-height: 23rem;
+	overflow: overlay;
+}
+
+.select-box ol::-webkit-scrollbar {
+	width: 0.6rem;
+}
+
+.select-box ol::-webkit-scrollbar-thumb {
+	width: 0.4rem;
+	height: 3rem;
+	background-color: #ccc;
+	border-radius: 0.4rem;
+}
+
+.select-box ol li {
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.select-box ol li.hide {
+	display: none;
+}
+
+.select-box ol li:not(:last-child) {
+	border-bottom: 0.1rem solid #eee;
+}
+
+.select-box ol li:hover {
+	background-color: lightcyan;
+}
+
+.select-box ol li .country-name {
+	margin-left: 0.4rem;
+}
+
 /* Responsive CSS */
 @media (min-width: 768px) {
 	/* .header-nav {
@@ -1172,6 +1312,9 @@ table.table.table-borderless.arabic-letters td a:hover {
 	}
 	.nav-link.active {
 		font-family: var(--font-regular);
+	}
+	.navbar-nav.main-navigation.arabic {
+		padding: 0;
 	}
 	.blog-dropdown {
 		left: 0;
@@ -1311,10 +1454,9 @@ table.table.table-borderless.arabic-letters td a:hover {
 	.footer-copyright-text {
 		font-size: 12px;
 	}
-
-	/* .footer-list-items-arabic {
-		direction: ltr;
-	} */
+	.social-profile svg {
+		width: 34px;
+	}
 
 	/* Platform Page */
 	.data-driven-subtitle {
