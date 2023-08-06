@@ -1082,12 +1082,73 @@ h1#exampleModalLabel {
 #model-close-btn {
 	font-family: var(--font-medium);
 }
+.sub-nav {
+	display: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: wheat;
+	width: 240px;
+	left: 0;
+	top: 100%;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px #cdcdcd;
+}
+.nav-link:hover .sub-nav {
+	display: block;
+}
+.dropdown-toggle::after {
+	color: var(--primary-blue);
+	margin-right: 10px;
+}
+li.nav-item.dropdown {
+	padding: 8px;
+}
+.nav-link.btn.btn-link.blog-dropdown {
+	padding: 0;
+}
+
+/* Glossary */
+.glossary-number-right {
+	border-radius: 15px;
+	background: #fff;
+	box-shadow: 0px 20px 40px 0px rgba(36, 38, 114, 0.11);
+}
+.glossary-number-right p {
+	color: #234e74;
+}
+.selected-letter p {
+	background: var(--orange-primary-color);
+	display: inline-block;
+	padding: 15px 30px;
+	border-radius: 10px;
+}
+.glossary-main-content h4,
+.glossary-main-content p {
+	color: #0b243a;
+}
+table.table.table-borderless.arabic-letters td {
+	text-align: center;
+}
+table.table.table-borderless.arabic-letters td a {
+	color: #333333;
+	text-align: center;
+	text-decoration: none;
+	padding: 8px;
+	font-size: 15px;
+}
+table.table.table-borderless.arabic-letters td a:hover {
+	background-color: var(--orange-primary-color);
+	padding: 12px;
+	border-radius: 10px;
+}
 
 /* Responsive CSS */
 @media (min-width: 768px) {
 	/* .header-nav {
 		padding: 40px 236px;
 	} */
+
 	.hero-left-content {
 		padding-left: 130px;
 	}
